@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FunTextView">
+        <!--  容器属性  -->
+        <attr name="bgColor" format="color" />
+
+        <!--  定位属性  -->
+        <attr name="leftPadding" format="integer" />
+        <attr name="topPadding" format="integer" />
+        <attr name="rightPadding" format="integer" />
+        <attr name="bottomPadding" format="integer" />
+
+        <!--  文本属性  -->
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="float" />
+        <attr name="textPosition">
+            <flag name="center" value="0x11" />
+            <flag name="left" value="0x03" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="right" value="0x05" />
+            <flag name="top" value="0x30" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="bottom" value="0x50" />
+        </attr>
+        <attr name="textArrangement">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <!--  滚动属性  -->
+        <attr name="canScroll" format="boolean" />
+        <!--    <attr name="scrollMode">-->
+        <!--        &lt;!&ndash; 普通滚动 &ndash;&gt;-->
+        <!--        <enum name="normal" value="0" />-->
+        <!--        &lt;!&ndash; 轮播图形式滚动 &ndash;&gt;-->
+        <!--        <enum name="carousel" value="1" />-->
+        <!--    </attr>-->
+        <attr name="textSpacing" format="float" />
+        <attr name="scrollSpeed" format="float" />
+        <attr name="scrollDirection">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
